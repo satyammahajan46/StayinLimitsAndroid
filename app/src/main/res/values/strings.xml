@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Stay in Limits</string>
+    <string name="login_activity">Login Credentials</string>
+    <string name="mainActivityHeading">Welcome, Please make a selection</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register_user">RegisterUser</string>
+    <string name="title_activity_normal_run">NormalRun</string>
+    <string name="normalRunWelcome">Welcome, </string>
+    <string name="name">Name</string>
+    <string name="jane_doe">Jane Doe</string>
+    <string name="registerHeading">Welcome to Stay in Limits</string>
+    <string name="registerSubHeading">Please enter the information below</string>
+    <string name="age">Age</string>
+    <string name="money">Total Money You Have</string>
+    <string name="ageEg">1 to 110</string>
+    <string name="moneyEg">$256.54</string>
+    <string name="creditLimit">Credit Card Limit</string>
+    <string name="creditBalance">Current Credit Card Balance</string>
+</resources>

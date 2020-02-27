@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="my_app_primary_color">#3F51B5</color>
+    <color name="my_app_secondary_color">#303F9F</color>
+    <color name="my_app_background_color">#FF4081</color>
+    <color name="crimson">#DC143C</color>
+    <color name="slategry">#708090</color>
+    <color name="lightgray">#000000</color>
+    <color name="my_app_error_color">#FF0000	</color>
+</resources>
