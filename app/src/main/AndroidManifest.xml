@@ -27,20 +27,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterUser"
+            android:name=".RegisterUserActivity"
             android:label="@string/title_activity_register_user"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.satyam.stayinlimits.MainActivity" />
-        </activity>
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:noHistory="true">
+            </activity>
         <activity
-            android:name=".NormalRun"
-            android:label="@string/title_activity_normal_run"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.satyam.stayinlimits.MainActivity" />
+            android:name=".NormalRunActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
+
         </activity>
     </application>
 

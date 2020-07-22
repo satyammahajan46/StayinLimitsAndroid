@@ -14,8 +14,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="title_activity_register_user">RegisterUser</string>
-    <string name="title_activity_normal_run">NormalRun</string>
+    <string name="title_activity_register_user">Register User</string>
+    <string name="title_activity_normal_run">Welcome</string>
     <string name="normalRunWelcome">Welcome, </string>
     <string name="name">Name</string>
     <string name="jane_doe">Jane Doe</string>
@@ -23,8 +23,24 @@
     <string name="registerSubHeading">Please enter the information below</string>
     <string name="age">Age</string>
     <string name="money">Total Money You Have</string>
-    <string name="ageEg">1 to 110</string>
+    <string name="dobEg">MM/DD/YYYY</string>
     <string name="moneyEg">$256.54</string>
+    <string name="zero">0</string>
     <string name="creditLimit">Credit Card Limit</string>
     <string name="creditBalance">Current Credit Card Balance</string>
+
+    <string name="dob">Date of Birth</string>
+    <string name="coming_soon_text">Coming Soon...</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="totalmoney">Total Money</string>
+    <string name="change">Change</string>
+    <string name="total_money_desc">This is the amount you have in you account</string>
+    <string name="goal">Your Goal</string>
+    <string name="percentage_to_goal">Percentage to goal</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="cardLimit">Limit</string>
+    <string name="cardBalance">Balance</string>
+    <string name="cardAvail">Available</string>
+    <string name="avail_Money">The available money in your card is $0.00</string>
+    <string name="savings">Savings</string>
 </resources>

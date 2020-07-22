@@ -5,6 +5,9 @@
     <color name="my_app_background_color">#FF4081</color>
     <color name="crimson">#DC143C</color>
     <color name="slategry">#708090</color>
-    <color name="lightgray">#000000</color>
-    <color name="my_app_error_color">#FF0000	</color>
+    <color name="black">#000000</color>
+    <color name="my_app_error_color">#FF0000</color>
+    <color name="app_bar_color">#353839</color>
+    <color name="card_background">#232b2b</color>
+    <color name="darkgrey">#A9A9A9</color>
 </resources>

@@ -1,169 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:id="@+id/mainContainer"
-    android:layout_height="match_parent"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:orientation="vertical">
-    <TextView
-        android:id="@+id/text_view_id"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:text="@string/registerHeading"
-        android:padding="5dp"
-        android:textSize="30dp"/>
-    <TextView
-        android:id="@+id/text_view_id"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:text="@string/registerSubHeading"
-        android:padding="5dp"
-        android:textSize="15dp"/>
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUserActivity">
 
-    <!--Name-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/eName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/name"
-        android:textColorHint="@color/slategry"
-        app:errorEnabled="true"
-        app:helperTextEnabled="true"
-        app:helperText="@string/jane_doe"
-        app:helperTextTextColor="@color/slategry"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/slategry"
-            app:helperTextEnabled="true"
-            app:helperText="@string/jane_doe"
-            app:helperTextTextColor="@color/slategry"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!--Age-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/eAge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/age"
-        android:textColorHint="@color/slategry"
-        app:errorEnabled="true"
-        app:helperTextEnabled="true"
-        app:helperText="@string/ageEg"
-        app:helperTextTextColor="@color/slategry"
-        android:padding="5dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/slategry"
-            android:inputType="number"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!--Current Balance-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/eCurrentBalance"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/money"
-        android:textColorHint="@color/slategry"
-        app:errorEnabled="true"
-        app:helperTextEnabled="true"
-        app:helperText="@string/moneyEg"
-        app:helperTextTextColor="@color/slategry"
-        android:padding="5dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/slategry"
-            android:inputType="numberDecimal"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!--credit limit-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/eCreditLimit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/creditLimit"
-        android:textColorHint="@color/slategry"
-        app:errorEnabled="true"
-        app:helperTextEnabled="true"
-        app:helperText="@string/moneyEg"
-        app:helperTextTextColor="@color/slategry"
-        android:padding="5dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/slategry"
-            android:inputType="number"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!--Credit Balance-->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/eCreditBalance"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/creditBalance"
-        android:textColorHint="@color/slategry"
-        app:errorEnabled="true"
-        app:helperTextEnabled="true"
-        app:helperText="$5000"
-        app:helperTextTextColor="@color/slategry"
-        android:padding="5dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/slategry"
-            android:inputType="number"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/mainContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="end|bottom"
-        android:layout_gravity="end|bottom"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="5dp"
-        >
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/submit"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="Next"
-            android:text="Next"
-            android:textAlignment="textEnd"
-            app:icon="@drawable/arrow_circle_right_solid"
-            app:iconGravity="end"
-            app:iconPadding="5dp"
-            android:layout_gravity="bottom|end|right"
-            android:padding="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/registerHeading"
+            android:textAlignment="center"
+            android:textSize="30dp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/registerSubHeading"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+        <!--Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:padding="5dp"
+            android:textColorHint="@color/slategry"
+            app:errorEnabled="true"
+            app:helperText="@string/jane_doe"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/slategry">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/slategry"
+                app:helperText="@string/jane_doe"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/slategry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--DOB-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DOB"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dob"
+            android:padding="5dp"
+            android:textColorHint="@color/slategry"
+            app:errorEnabled="true"
+            app:helperText="@string/dobEg"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/slategry">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/slategry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Current Balance-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/currentBalance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/money"
+            android:padding="5dp"
+            android:textColorHint="@color/slategry"
+            app:errorEnabled="true"
+            app:helperText="@string/moneyEg"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/slategry">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eCurrentBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/slategry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--credit limit-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/creditLimit"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/creditLimit"
+            android:padding="5dp"
+            android:textColorHint="@color/slategry"
+            app:errorEnabled="true"
+            app:helperText="@string/moneyEg"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/slategry">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eCreditLimit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/slategry" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Credit Balance-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/creditBalance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/creditBalance"
+            android:padding="5dp"
+            android:textColorHint="@color/slategry"
+            app:errorEnabled="true"
+            app:helperText="$5000"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/slategry">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eCreditBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:nextFocusForward="@id/submit"
+                android:textColor="@color/slategry" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/progressBarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:alpha="0.4"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:clickable="true">
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
             />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-</LinearLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end|right"
+        android:layout_margin="20dp"
+        android:contentDescription="Submit"
+        android:padding="0dp"
+        android:text="Submit"
+        android:textAlignment="textEnd"
+        app:icon="@drawable/arrow_circle_right_solid"
+        app:iconGravity="end"
+        app:iconPadding="5dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 

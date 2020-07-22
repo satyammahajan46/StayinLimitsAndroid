@@ -1,10 +1,11 @@
-package com.example.satyam.stayinlimits;
+package com.example.satyam.stayinlimits.models;
 
 public class Record {
     private static int transID = 1;
     private String transName;
     private double credit;
     private double debit;
+    private String date;
 
     public Record(String transName) {
         this(transName, 0.0, 0.0);
@@ -43,5 +44,12 @@ public class Record {
 
     public void setDebit(double debit) {
         this.debit = debit;
+    }
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }
